@@ -1,12 +1,13 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  # :confirmable, :lockable, :timeoutable, :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable,
+         :recoverable, :rememberable,
          authentication_keys: [:employee_number]
 
   validates :employee_number, presence: true, uniqueness: true
-  validates :password, presence: true, length: { minimum: 6 }
+  # Password validation, remove length restriction
+  validates :password, presence: true
 
   # Use employee_number for login
   def self.find_for_database_authentication(warden_conditions)
@@ -26,4 +27,3 @@ class User < ApplicationRecord
     false
   end
 end
-
