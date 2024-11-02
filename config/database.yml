@@ -20,7 +20,7 @@ test:
   <<: *default
   database: storage/test.sqlite3
 
- production:
+production:
   <<: *default
   adapter: postgresql
   encoding: unicode
