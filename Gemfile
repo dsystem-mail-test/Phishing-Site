@@ -74,3 +74,4 @@ gem 'devise'
 
 gem 'psych', '~> 4.0'
 
+gem 'webpacker', '~> 5.0'
