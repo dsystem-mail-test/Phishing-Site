@@ -1,12 +1,12 @@
 databases:
   - name: Dsys_phish_DB
-    databaseName: Dsys_phish_db
-    user: Dsys_phish
+    databaseName: dsys_phish_db
+    user: Phishing-Site
     region: singapore
 
 services:
   - type: web
-    name: Dsys_phish
+    name: Phishing-Site
     env: ruby
     region: singapore
     plan: free
