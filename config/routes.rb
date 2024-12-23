@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root  'users/sign_up'
+  root  'devise/session#new'
   get 'admin/index'
   get 'home/top'
   devise_for :users
