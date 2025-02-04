@@ -1,6 +1,6 @@
 databases:
   - name: Dsys_phish_DB
-    databaseName: dsys_phish_db_tt1d
+    databaseName: dsys_phish_db_vsim
     user: Phishing-Site
     region: singapore
 
